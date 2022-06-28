@@ -73,15 +73,12 @@
                         </table>
                     </td>
                 </tr>
-                @if ($item->transaction_status == "PENDING")
-                    <tr>
-                        <th>Payment Action</th>
-                        <td>
-                            <a href="{{ route('transaction.confirm', $item->id) }}" class="btn btn-success">Accept</a>
-                            <a href="{{ route('transaction.reject', $item->id) }}" class="btn btn-danger">Decline</a>
-                            </td>
-                    </tr>
-                @endif
+                <tr>
+                    <th>Action</th>
+                    <td>
+                        <a href="{{ route('transaction.cancel-request.refund', $item->id) }}" class="btn btn-success">Success Refund</a>
+                        </td>
+                </tr>
             </table>
         </div>
     </div>

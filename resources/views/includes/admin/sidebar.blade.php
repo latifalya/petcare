@@ -46,6 +46,13 @@
         >
     </li>
 
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('transaction.cancel-request') }}">
+            <i class="fas fa-fw fa-file"></i>
+            <span>Cancel Order Request</span></a
+        >
+    </li>
+    
     <!-- Nav Item - Dashboard -->
     <li class="nav-item">
         <a class="nav-link" href="{{ route('transaction.week') }}">
@@ -67,7 +74,27 @@
             <span>Year Report</span></a
         >
     </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('transaction.today') }}">
+            <i class="fas fa-fw fa-file"></i>
+            <span>Today's Transaction</span></a
+        >
+    </li>
     
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('worker.index') }}">
+            <i class="fas fa-fw fa-file"></i>
+            <span>Pegawai</span></a
+        >
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('rating.index') }}">
+            <i class="fas fa-fw fa-file"></i>
+            <span>Rating</span></a
+        >
+    </li>
 
     <hr class="sidebar-divider" />
 
